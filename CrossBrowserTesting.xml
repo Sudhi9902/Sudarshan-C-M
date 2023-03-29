@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="chromeTest">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="CrossBrowser.TC_003_Tirumph"/>
+      <class name="CrossBrowser.TC_005_car2"/>
+      <class name="CrossBrowser.TC_004_cars"/>
+      <class name="CrossBrowser.TC_001_BMW"/>
+      <class name="CrossBrowser.TC_002_Bugati"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="firefoxTest">
+  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="CrossBrowser.TC_003_Tirumph"/>
+      <class name="CrossBrowser.TC_005_car2"/>
+      <class name="CrossBrowser.TC_004_cars"/>
+      <class name="CrossBrowser.TC_001_BMW"/>
+      <class name="CrossBrowser.TC_002_Bugati"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

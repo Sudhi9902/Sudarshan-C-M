@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<parameter name="ELF_43" value="Team99"></parameter>
+	<test thread-count="5" name="CarsTest" parallel="classes" >
+		<classes>
+			<class name="Cars.TC_005_car2" />
+			<class name="Cars.TC_004_cars" />
+		</classes>
+	</test>
+	<test thread-count="5" name="BikeTest" >
+		<classes>
+			<class name="VarietyBikes.TC_003_Tirumph" />
+			<class name="VarietyBikes.TC_001_BMW" />
+			<class name="VarietyBikes.TC_002_Bugati" />
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
